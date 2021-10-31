@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Pay</title>
+</head>
+<body>
+<span th:text="${balance}"/>
+<div>Оплатить подписку</div>
+<form action="paySubscription" method="post">
+    <input name="monthsNumber" type="text">
+    <button type="submit">Купить подписку</button>
+</form>
+<div>Пополнить счёт</div>
+<form action="topUpBalance" method="post">
+    <input name="cardNumber" type="text">
+    <input name="CVV" type="text">
+    <input name="sum" type="text">
+    <button type="submit">Пополнить счёт</button>
+</form>
+</body>
+</html>
