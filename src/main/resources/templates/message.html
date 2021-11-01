@@ -5,6 +5,18 @@
     <title>Pay</title>
 </head>
 <body>
+<table style="margin: auto">
+    <tr>
+        <td>
+            <a th:href="${toAuthorisation}" style="border: solid 1px blue; padding: 3px">Авторизация</a>
+            <a th:href="${toCatalog}" style="border: solid 1px blue; padding: 3px">Каталог</a>
+            <a th:href="${toProfile}" style="border: solid 1px blue; padding: 3px">Профиль</a>
+            <a th:href="${toPay}" style="border: solid 1px blue; padding: 3px">Оплата</a>
+            <a th:href="${toSubscription}" style="border: solid 1px blue; padding: 3px">Подписка</a>
+            <a th:href="${toPenalties}" style="border: solid 1px blue; padding: 3px">Штрафы</a>
+        </td>
+    </tr>
+</table>
 <label th:text="${message}"/>
 <form th:action="${toMainURL}" method="get">
     <button type="submit">Вернуться</button>
