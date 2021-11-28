@@ -17,6 +17,15 @@ public class Users {
     private Long balance;
     private Boolean subscriber;
     private Boolean adminRoot;
+    private String token;
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 
     public Users() {
     }
